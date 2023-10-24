@@ -4,3 +4,16 @@ summary: Empty sandbox environment
 description: Deploys an empty sandbox environment
 runner: Terraform
 templatePath: empty.tf
+parameters: 
+- id: "AWS_ACCESS_KEY_ID"
+  name: "AWS_ACCESS_KEY_ID"
+  required: true
+  type: "string"
+- id: "AWS_SECRET_ACCESS_KEY"
+  name: "AWS_SECRET_ACCESS_KEY"
+  required: true
+  type: "string"
+- id: "AWS_SESSION_TOKEN"
+  name: "AWS_SESSION_TOKEN"
+  required: true
+  type: "string"
